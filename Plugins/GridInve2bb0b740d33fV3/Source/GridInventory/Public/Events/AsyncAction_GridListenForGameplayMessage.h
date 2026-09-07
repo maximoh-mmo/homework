@@ -5,7 +5,7 @@
 
 #include "Engine/CancellableAsyncAction.h"
 #include "GridGameplayMessageSubsystem.h"
-#include "GameplayMessageTypes2.h"
+#include "GridGameplayMessageTypes.h"
 
 #include "AsyncAction_GridListenForGameplayMessage.generated.h"
 

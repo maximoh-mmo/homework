@@ -119,7 +119,7 @@ public:
 	bool bUseGeneratedIcons = false;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Grid Inventory", meta=(ExposeOnSpawn))
-	UTexture2D* Icon = nullptr;
+	TObjectPtr<UTexture2D> Icon = nullptr;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Grid Inventory", meta=(ExposeOnSpawn))
 	EGridItemMeshType ItemMeshType;

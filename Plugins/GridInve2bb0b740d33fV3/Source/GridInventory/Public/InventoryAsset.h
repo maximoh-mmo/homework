@@ -61,5 +61,5 @@ public:
 	float SpaceBetweenElements = 5.f;
 	
 	UPROPERTY(Instanced)
-	TArray<UInventorySlotWrapper*> InventorySlots;
+	TArray<TObjectPtr<UInventorySlotWrapper>> InventorySlots;
 };

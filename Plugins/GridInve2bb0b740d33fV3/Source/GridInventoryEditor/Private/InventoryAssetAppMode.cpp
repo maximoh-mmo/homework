@@ -35,8 +35,15 @@ void InventoryAssetAppMode::RegisterTabFactories(TSharedPtr<FTabManager> InTabMa
 {
 	TSharedPtr<InventoryAssetEditorApp> app = mApp.Pin();
 	app->PushTabFactories(mTabs);
+	FWorkflowCentricApplication* Application = app.Get();
 
-	FApplicationMode::RegisterTabFactories(InTabManager);
+	// Ensure tab manager is valid and pass as TSharedRef required by FApplicationMode API
+	if (!InTabManager.IsValid())
+	{
+		return;
+	}
+
+	FApplicationMode::RegisterTabFactoriesWithAppAndManager(Application, InTabManager.ToSharedRef());
 }
 
 void InventoryAssetAppMode::PostActivateMode()

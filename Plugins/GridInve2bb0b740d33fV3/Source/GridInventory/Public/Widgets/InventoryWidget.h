@@ -81,7 +81,7 @@ private:
 	int32 InventorySlotIndex = 0;
 
 	UPROPERTY()
-	TArray<UGridItemWidget*> ItemWidgets;
+	TArray<TObjectPtr<UGridItemWidget>> ItemWidgets;
 
 	UPROPERTY()
 	TObjectPtr<UGridPayload> SplittingItemPayload = nullptr;

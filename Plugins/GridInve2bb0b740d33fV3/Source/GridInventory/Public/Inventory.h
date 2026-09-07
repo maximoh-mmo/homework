@@ -25,7 +25,7 @@ struct GRIDINVENTORY_API FInventoryGridCell
 	
 	// Grid item have its size, so each grid cell that is occupied by this item, has reference to an item, that is why it is associated
 	UPROPERTY()
-	UGridItem* AssociatedItem = nullptr;
+	TObjectPtr<UGridItem> AssociatedItem = nullptr;
 };
 
 USTRUCT(BlueprintType, Blueprintable)
@@ -56,7 +56,7 @@ struct GRIDINVENTORY_API FInventorySlot
 private:
 	FInventoryGridCell* GetGridCellInternal(int32 X, int32 Y);
 	
-	// This array represents a 2D structure, so we should access it like this: yIndex * SlotDimension.x + xIndex
+	// This array represents a 2D structure, so we should access it like this: yIndex > SlotDimension.x + xIndex
 	UPROPERTY()
 	TArray<FInventoryGridCell> SlotGridCells;
 	

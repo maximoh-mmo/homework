@@ -15,8 +15,8 @@ struct FGridItemDragEventData
 	GENERATED_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Grid Inventory", meta=(ExposeOnSpawn))
-	UObject* EventInstigator = nullptr;
+	TObjectPtr<UObject> EventInstigator = nullptr;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Grid Inventory", meta=(ExposeOnSpawn))
-	UGridItem* DraggedItem = nullptr;
+	TObjectPtr<UGridItem> DraggedItem = nullptr;
 };

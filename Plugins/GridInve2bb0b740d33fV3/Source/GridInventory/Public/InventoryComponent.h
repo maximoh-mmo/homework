@@ -28,7 +28,7 @@ public:
 	
 protected:
 	UPROPERTY(EditAnywhere, Instanced, Category = "Grid Inventory")
-	TArray<UGridItem*> InitialItems;
+	TArray<TObjectPtr<UGridItem>> InitialItems;
 
 	UPROPERTY(EditAnywhere, Category = "Grid Inventory")
 	TObjectPtr<UInventoryAsset> InventoryAsset = nullptr;

@@ -47,9 +47,9 @@ public:
 
 private:
 	UPROPERTY()
-	TArray<AGridRenderTargetActor*> SpawnedGridRenderActors;
+	TArray<TObjectPtr<AGridRenderTargetActor>> SpawnedGridRenderActors;
 
 	// This is a dedicated render target actor that is used for generation thumbnail icons for inventory items
 	UPROPERTY()
-	AGridRenderTargetActor* IconGenerationRenderActor = nullptr;
+	TObjectPtr<AGridRenderTargetActor> IconGenerationRenderActor = nullptr;
 };

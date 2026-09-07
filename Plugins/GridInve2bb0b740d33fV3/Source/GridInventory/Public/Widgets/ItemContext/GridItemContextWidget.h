@@ -39,8 +39,8 @@ private:
 	void OnActionElementClicked(UGridItemContextElement* InClickedElement);
 	
 	UPROPERTY(BlueprintReadOnly, Category="Grid Inventory", meta=(AllowPrivateAccess = "true"))
-	TArray<UGridItemActionBase*> Actions;
+	TArray<TObjectPtr<UGridItemActionBase>> Actions;
 
 	UPROPERTY(BlueprintReadOnly, Category="Grid Inventory", meta=(AllowPrivateAccess = "true"))
-	UGridItem* Item = nullptr;
+	TObjectPtr<UGridItem> Item = nullptr;
 };

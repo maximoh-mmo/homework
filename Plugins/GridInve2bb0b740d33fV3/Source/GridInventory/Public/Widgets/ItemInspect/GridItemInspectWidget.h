@@ -23,5 +23,5 @@ public:
 
 protected:
 	UPROPERTY(BlueprintReadOnly, Category = "Grid Inventory")
-	UGridItem* InspectedItem = nullptr;
+	TObjectPtr<UGridItem> InspectedItem = nullptr;
 };

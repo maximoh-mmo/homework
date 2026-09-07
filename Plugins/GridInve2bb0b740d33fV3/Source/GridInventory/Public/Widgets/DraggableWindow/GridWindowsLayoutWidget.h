@@ -86,7 +86,7 @@ private:
 	void UnfocusAllWindows();
 
 	UPROPERTY()
-	TArray<UGridDraggableWindow*> ActiveWindows;
+	TArray<TObjectPtr<UGridDraggableWindow>> ActiveWindows;
 
 	UPROPERTY()
 	TObjectPtr<UGridDraggableWindow> CurrentPopupWindow = nullptr;

@@ -17,7 +17,7 @@ namespace
 	void SetMipmapStreaming(UMaterialInterface* Material, ERHIFeatureLevel::Type FeatureLeve, bool IsMipmapStreamingEnabled)
 	{
 		TArray<UTexture*> Textures;
-		Material->GetUsedTextures(Textures, EMaterialQualityLevel::Type::Num, true, FeatureLeve, true);
+		Material->GetUsedTextures(Textures);
 
 		if (!IsMipmapStreamingEnabled)
 		{

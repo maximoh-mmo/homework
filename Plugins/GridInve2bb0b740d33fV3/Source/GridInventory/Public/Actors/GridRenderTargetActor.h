@@ -28,10 +28,10 @@ struct GRIDINVENTORY_API FRequestTextureCreationData
 	FGridRenderTargetSpecification renderSpecification;
 
 	UPROPERTY()
-	UStaticMesh* MeshToCapture = nullptr;
+	TObjectPtr<UStaticMesh> MeshToCapture = nullptr;
 
 	UPROPERTY()
-	USkeletalMesh* SkeletalMeshToCapture = nullptr;
+	TObjectPtr<USkeletalMesh> SkeletalMeshToCapture = nullptr;
 
 	FTextureCreatedDelegate TextureCreatedCallback;
 	
@@ -120,7 +120,7 @@ protected:
 	bool bIsHoldingMouseButton = false;
 	
 	UPROPERTY(BlueprintReadOnly, Category = "Grid Inventory")
-	class UTexture2D* TestTexture = nullptr;
+	TObjectPtr<UTexture2D> TestTexture = nullptr;
 	
 private:
 	FVector MeshInitialRelativePosition = FVector::ZeroVector;

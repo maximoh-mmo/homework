@@ -17,16 +17,16 @@ struct GRIDINVENTORY_API FGridActionContext
 	GENERATED_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Grid Inventory", meta=(ExposeOnSpawn))
-	UGridItem* Item = nullptr;
+	TObjectPtr<UGridItem> Item = nullptr;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Grid Inventory", meta=(ExposeOnSpawn))
-	UGridItemContextWidget* ContextWidget = nullptr;
+	TObjectPtr<UGridItemContextWidget> ContextWidget = nullptr;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Grid Inventory", meta=(ExposeOnSpawn))
-	APawn* InstigatorPawn = nullptr;
+	TObjectPtr<APawn> InstigatorPawn = nullptr;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Grid Inventory", meta=(ExposeOnSpawn))
-	APlayerController* InstigatorController = nullptr;
+	TObjectPtr<APlayerController> InstigatorController = nullptr;
 };
 
 /**

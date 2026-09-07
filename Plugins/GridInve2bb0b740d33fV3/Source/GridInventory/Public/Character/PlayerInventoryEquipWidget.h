@@ -69,5 +69,5 @@ protected:
 
 private:
 	UPROPERTY()
-	TArray<UInventory*> EquippedInventories;
+	TArray<TObjectPtr<UInventory>> EquippedInventories;
 };

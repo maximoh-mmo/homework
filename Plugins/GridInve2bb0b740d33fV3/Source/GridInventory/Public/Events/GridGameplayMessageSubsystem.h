@@ -3,7 +3,7 @@
 
 #pragma once
 
-#include "Events/GameplayMessageTypes2.h"
+#include "Events/GridGameplayMessageTypes.h"
 #include "GameplayTagContainer.h"
 #include "Subsystems/GameInstanceSubsystem.h"
 #include "UObject/WeakObjectPtr.h"
