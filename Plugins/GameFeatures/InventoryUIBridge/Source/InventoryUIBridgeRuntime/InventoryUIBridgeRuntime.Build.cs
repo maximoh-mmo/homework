@@ -2,9 +2,9 @@
 
 using UnrealBuildTool;
 
-public class GridInventory : ModuleRules
+public class InventoryUIBridgeRuntime : ModuleRules
 {
-	public GridInventory(ReadOnlyTargetRules Target) : base(Target)
+	public InventoryUIBridgeRuntime(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 		
@@ -38,9 +38,6 @@ public class GridInventory : ModuleRules
 				"Engine",
 				"Slate",
 				"SlateCore",
-				"UMG",
-				"GameplayTags",
-				"EnhancedInput",
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);

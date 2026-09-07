@@ -2,10 +2,10 @@
 /shelf/
 /workspace.xml
 # Rider ignored files
-/.idea.LyraStarterGame.iml
-/contentModel.xml
-/modules.xml
 /projectSettingsUpdater.xml
+/.idea.LyraStarterGame.iml
+/modules.xml
+/contentModel.xml
 # Editor-based HTTP Client requests
 /httpRequests/
 # Ignored default folder with query files
